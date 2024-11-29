@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import GachaChar from "../gacha_char/GachaChar";
 
 export default function ApiContent() {
     const [data, setData] = useState([]);
@@ -67,6 +68,7 @@ export default function ApiContent() {
                         </div>
                     );
                 })}
+                <GachaChar pokemonData={data} />
             </div>
         </>
     )
